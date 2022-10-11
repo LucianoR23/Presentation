@@ -13,8 +13,8 @@ html {
 body {
     display: grid;
     font-family: $font-primary;
-    grid-template-rows: auto 1fr 1fr 1fr auto;
-    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    min-height: 300vh;
     color: $secondary;
     background-image: url(../public/img/backimg.svg);
     background-size: cover;

@@ -1,10 +1,32 @@
-.home {
-    gap: 5rem;
-    text-align: center;
-    padding-top: 3rem;
+main {
+    justify-content: space-between;
 
-
-    &__title {
-        font-size: $text-title;
+    .home {
+        gap: 8rem;
+        text-align: center;
+        padding-top: 5rem;
+    
+    
+        &__title {
+            font-size: $text-title;
+        }
     }
+
+    .about {
+        gap: 20rem;
+        text-align: justify;
+        align-items: center;
+
+        &__img {
+            width: 40rem;
+        }
+
+        &__text {
+            font-size: $text-lg;
+            width: 40rem;
+        }
+
+    }
+
 }
+

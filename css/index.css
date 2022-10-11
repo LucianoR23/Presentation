@@ -12,8 +12,8 @@ html {
 body {
   display: grid;
   font-family: "Rubik", sans-serif;
-  grid-template-rows: auto 1fr 1fr 1fr auto;
-  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  min-height: 300vh;
   color: #BBD4F3;
   background-image: url(../public/img/backimg.svg);
   background-size: cover; }
@@ -40,12 +40,23 @@ a {
   max-width: 1080px;
   margin: 0 auto; }
 
-.home {
-  gap: 5rem;
-  text-align: center;
-  padding-top: 3rem; }
-  .home__title {
-    font-size: 5em; }
+main {
+  justify-content: space-between; }
+  main .home {
+    gap: 8rem;
+    text-align: center;
+    padding-top: 5rem; }
+    main .home__title {
+      font-size: 5em; }
+  main .about {
+    gap: 20rem;
+    text-align: justify;
+    align-items: center; }
+    main .about__img {
+      width: 40rem; }
+    main .about__text {
+      font-size: 2.2em;
+      width: 40rem; }
 
 nav {
   min-height: 10vh;

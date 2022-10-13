@@ -40,14 +40,21 @@ a {
   max-width: 1080px;
   margin: 0 auto; }
 
+.grid {
+  display: grid; }
+
 main {
   justify-content: space-between; }
+  main div {
+    min-height: 80rem; }
   main .home {
     gap: 8rem;
     text-align: center;
     padding-top: 5rem; }
     main .home__title {
       font-size: 5em; }
+    main .home__subtitle {
+      font-size: 3em; }
   main .about {
     gap: 20rem;
     text-align: justify;
@@ -57,6 +64,58 @@ main {
     main .about__text {
       font-size: 2.2em;
       width: 40rem; }
+  main .knowledge {
+    grid-template-areas: '. text1 text1 .' 'html css boot sass' '. js text2 text2' 'node text3 text3 react';
+    justify-items: center;
+    align-items: center;
+    min-width: 1080px; }
+
+.text1 {
+  grid-area: text1;
+  font-size: 3em; }
+
+.logo-html {
+  grid-area: html; }
+  .logo-html img {
+    width: 14rem; }
+
+.logo-css {
+  grid-area: css; }
+  .logo-css img {
+    width: 18rem; }
+
+.logo-boot {
+  grid-area: boot; }
+  .logo-boot img {
+    width: 18rem; }
+
+.logo-sass {
+  grid-area: sass; }
+  .logo-sass img {
+    width: 14rem; }
+
+.logo-js {
+  grid-area: js; }
+  .logo-js img {
+    width: 16rem; }
+
+.text2 {
+  grid-area: text2;
+  font-size: 3em; }
+
+.logo-node {
+  grid-area: node; }
+  .logo-node img {
+    width: 18rem; }
+
+.text3 {
+  grid-area: text3;
+  font-size: 3em; }
+
+.logo-react {
+  grid-area: react; }
+  .logo-react img {
+    width: 16rem; }
 
 nav {
   min-height: 10vh;
@@ -80,3 +139,9 @@ nav {
   .menu__link:hover {
     border-color: #BBD4F3;
     border-radius: 10px; }
+
+footer {
+  min-width: 30rem;
+  min-height: 10vh;
+  justify-content: space-around;
+  align-items: center; }

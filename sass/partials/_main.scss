@@ -1,14 +1,21 @@
 main {
     justify-content: space-between;
 
+    div {
+        min-height: 80rem;
+    }
+
     .home {
         gap: 8rem;
         text-align: center;
         padding-top: 5rem;
     
-    
         &__title {
             font-size: $text-title;
+        }
+
+        &__subtitle {
+            font-size: $text-xl;
         }
     }
 
@@ -28,5 +35,77 @@ main {
 
     }
 
+    .knowledge {
+        grid-template-areas: 
+        '. text1 text1 .'
+        'html css boot sass'
+        '. js text2 text2'
+        'node text3 text3 react';
+        justify-items: center;
+        align-items: center;
+        min-width: 1080px;
+    }
+
 }
 
+.text1 {
+    grid-area: text1;
+    font-size: $text-xl;
+}
+.logo-html {
+    grid-area: html;
+
+    img {
+        width: 14rem;
+    }
+}
+.logo-css {
+    grid-area: css;
+    
+    img {
+        width: 18rem;
+    }
+}
+.logo-boot {
+    grid-area: boot;
+
+    img {
+        width: 18rem;
+    }
+}
+.logo-sass {
+    grid-area: sass;
+
+    img {
+        width: 14rem;
+    }
+}
+.logo-js {
+    grid-area: js;
+
+    img {
+        width: 16rem;
+    }
+}
+.text2 {
+    grid-area: text2;
+    font-size: $text-xl;
+}
+.logo-node {
+    grid-area: node;
+
+    img {
+        width: 18rem;
+    }
+}
+.text3 {
+    grid-area: text3;
+    font-size: $text-xl;
+}
+.logo-react {
+    grid-area: react;
+
+    img {
+        width: 16rem;
+    }
+}

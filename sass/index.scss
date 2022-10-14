@@ -9,7 +9,41 @@
 @import './partials/header';
 @import './partials/footer';
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 431px) {
+    main {
+        div {
+            min-height: 55em;
+        }
+    }
+    nav {
+        justify-content: center;
+    }
+
+    div.about {
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+        transform: translate(0px, 3em);
+    }
+
+    div.knowledge {
+        grid-template-areas: 
+        'text1 text1'
+        'html css'
+        'boot sass'
+        'js text2'
+        'text3 text3'
+        'node react';
+        min-width: 10em;
+        max-width: 32.5em;
+        gap: 4em;
+    }
+
+    p.about__text {
+        max-width: 32.25em;
+        font-size: $text-md;
+    }
+
     .container {
         max-width: 32.25em;
     }
@@ -17,4 +51,48 @@
     img {
         max-width: 32.5em;
     }
+
+    .logo-html {
+        img {
+            width: 9em;
+        }
+    }
+    .logo-css {
+        img {
+            width: 12em;
+        }
+    }
+    .logo-boot {
+        img {
+            width: 12em;
+        }
+    }
+    .logo-sass {
+        img {
+            width: 9em;
+        }
+    }
+    .logo-js {
+        img {
+            width: 10em;
+        }
+    }
+    .text2 {
+        transform: translate(0, 0);
+    }
+    .logo-node {
+        transform: translate(0, 0);
+    
+        img {
+            width: 10em;
+        }
+    }
+    .logo-react {
+        transform: translate(0, 0);
+    
+        img {
+            width: 10em;
+        }
+    }
+    
 }

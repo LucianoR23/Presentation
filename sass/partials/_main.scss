@@ -2,11 +2,11 @@ main {
     justify-content: space-around;
 
     div {
-        min-height: 80rem;
+        min-height: 80em;
     }
 
     .home {
-        gap: 8rem;
+        gap: 8em;
         text-align: center;
     
         &__title {
@@ -19,26 +19,25 @@ main {
     }
 
     .about {
-        gap: 15rem;
+        gap: 15em;
         text-align: start;
         align-items: flex-end;
 
         p {
-            box-sizing: border-box;
-            padding: 3rem;
-            border: solid 0.5rem #1c8bdb3a;
-            border-radius: 1rem;
+            padding: 1.25em;
+            border: solid 0.3em #1c8bdb3a;
+            border-radius: 0.5em;
         }
 
         &__img {
-            width: 40rem;
-            border-radius: 1rem;
+            width: 40em;
+            border-radius: 1em;
         }
 
         &__text {
             font-size: $text-lg;
-            width: 40rem;
-            transform: translate(0, -5rem);
+            width: 19em;
+            transform: translate(0, -2.5em);
         }
 
     }
@@ -51,7 +50,7 @@ main {
         'node text3 text3 react';
         justify-items: center;
         align-items: center;
-        min-width: 1080px;
+        min-width: 108em;
     }
 
 }
@@ -64,48 +63,48 @@ main {
     grid-area: html;
 
     img {
-        width: 14rem;
+        width: 14em;
     }
 }
 .logo-css {
     grid-area: css;
     
     img {
-        width: 18rem;
+        width: 18em;
     }
 }
 .logo-boot {
     grid-area: boot;
 
     img {
-        width: 18rem;
+        width: 18em;
     }
 }
 .logo-sass {
     grid-area: sass;
 
     img {
-        width: 14rem;
+        width: 14em;
     }
 }
 .logo-js {
     grid-area: js;
 
     img {
-        width: 16rem;
+        width: 16em;
     }
 }
 .text2 {
     grid-area: text2;
     font-size: $text-xl;
-    transform: translate(-13rem, 0);
+    transform: translate(-5em, 0);
 }
 .logo-node {
     grid-area: node;
-    transform: translate(13rem, 1rem);
+    transform: translate(13em, 1em);
 
     img {
-        width: 18rem;
+        width: 18em;
     }
 }
 .text3 {
@@ -114,9 +113,9 @@ main {
 }
 .logo-react {
     grid-area: react;
-    transform: translate(-15rem, 0);
+    transform: translate(-15em, 0);
 
     img {
-        width: 16rem;
+        width: 16em;
     }
 }

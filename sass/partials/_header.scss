@@ -3,7 +3,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 2rem;
+    padding: 0 2em;
 }
 
 .logo {
@@ -16,14 +16,14 @@ nav {
     font-size: $text-md;
     
     &__link {
-        border: 2px solid $principal;
-        border-radius: 10px;
+        border: 0.14em solid $principal;
+        border-radius: 0.5em;
         transition: border-color .3s ease-in;
         padding: 0.5em;
     }
 
     &__link:hover {
         border-color: $secondary;
-        border-radius: 10px;
+        border-radius: 0.5em;
     }
 }

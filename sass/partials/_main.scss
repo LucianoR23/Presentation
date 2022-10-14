@@ -19,18 +19,26 @@ main {
     }
 
     .about {
-        gap: 20rem;
-        text-align: justify;
+        gap: 15rem;
+        text-align: start;
         align-items: flex-end;
+
+        p {
+            box-sizing: border-box;
+            padding: 3rem;
+            border: solid 0.5rem #1c8bdb3a;
+            border-radius: 1rem;
+        }
 
         &__img {
             width: 40rem;
+            border-radius: 1rem;
         }
 
         &__text {
             font-size: $text-lg;
             width: 40rem;
-            transform: translate(0, -10rem);
+            transform: translate(0, -5rem);
         }
 
     }

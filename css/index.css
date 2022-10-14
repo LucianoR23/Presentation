@@ -7,7 +7,8 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   display: grid;
@@ -43,14 +44,18 @@ a {
 .grid {
   display: grid; }
 
+div.knowledge img {
+  transition: transform .5s ease-in-out; }
+  div.knowledge img:hover {
+    transform: scale(1.5); }
+
 main {
-  justify-content: space-between; }
+  justify-content: space-around; }
   main div {
     min-height: 80rem; }
   main .home {
     gap: 8rem;
-    text-align: center;
-    padding-top: 5rem; }
+    text-align: center; }
     main .home__title {
       font-size: 5em; }
     main .home__subtitle {
@@ -58,12 +63,13 @@ main {
   main .about {
     gap: 20rem;
     text-align: justify;
-    align-items: center; }
+    align-items: flex-end; }
     main .about__img {
       width: 40rem; }
     main .about__text {
       font-size: 2.2em;
-      width: 40rem; }
+      width: 40rem;
+      transform: translate(0, -10rem); }
   main .knowledge {
     grid-template-areas: '. text1 text1 .' 'html css boot sass' '. js text2 text2' 'node text3 text3 react';
     justify-items: center;
@@ -101,10 +107,12 @@ main {
 
 .text2 {
   grid-area: text2;
-  font-size: 3em; }
+  font-size: 3em;
+  transform: translate(-13rem, 0); }
 
 .logo-node {
-  grid-area: node; }
+  grid-area: node;
+  transform: translate(13rem, 1rem); }
   .logo-node img {
     width: 18rem; }
 
@@ -113,7 +121,8 @@ main {
   font-size: 3em; }
 
 .logo-react {
-  grid-area: react; }
+  grid-area: react;
+  transform: translate(-15rem, 0); }
   .logo-react img {
     width: 16rem; }
 

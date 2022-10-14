@@ -1,5 +1,5 @@
 main {
-    justify-content: space-between;
+    justify-content: space-around;
 
     div {
         min-height: 80rem;
@@ -8,7 +8,6 @@ main {
     .home {
         gap: 8rem;
         text-align: center;
-        padding-top: 5rem;
     
         &__title {
             font-size: $text-title;
@@ -22,7 +21,7 @@ main {
     .about {
         gap: 20rem;
         text-align: justify;
-        align-items: center;
+        align-items: flex-end;
 
         &__img {
             width: 40rem;
@@ -31,6 +30,7 @@ main {
         &__text {
             font-size: $text-lg;
             width: 40rem;
+            transform: translate(0, -10rem);
         }
 
     }
@@ -90,9 +90,11 @@ main {
 .text2 {
     grid-area: text2;
     font-size: $text-xl;
+    transform: translate(-13rem, 0);
 }
 .logo-node {
     grid-area: node;
+    transform: translate(13rem, 1rem);
 
     img {
         width: 18rem;
@@ -104,6 +106,7 @@ main {
 }
 .logo-react {
     grid-area: react;
+    transform: translate(-15rem, 0);
 
     img {
         width: 16rem;

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luciano Rodriguez</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="flex-row container">
+        <nav class="flex-row container" data-aos="zoom-in-down" data-aos-easing="ease-in-sine" data-aos-delay="200">
             <picture class="logo"><img src="public/img/logo.png" alt="LR"></picture>
             <ul class="menu flex-row">
                 <li class="menu__item">
@@ -22,7 +23,7 @@
         </nav>
     </header>
     <main class="flex-column">
-        <div class="home container flex-column">
+        <div class="home container flex-column" data-aos="zoom-in-up" data-aos-easing="ease-in-sine" data-aos-delay="200">
             <h1 class="home__title">
                 Full Stack Developer in training
             </h1>
@@ -30,7 +31,7 @@
                 <img class="container" src="./public/img/imgHome.png" alt="VSCode project">
             </picture>
         </div>
-        <div id="about" class="about container flex-row">
+        <div id="about" class="about container flex-row" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine">
             <picture class="about__picture">
                 <img class="about__img" src="./public/img/lr.jpg" alt="Luciano Rodriguez">
             </picture>
@@ -40,7 +41,7 @@
                  because I want to keep learning and hope to find a place to obtain working experience.
             </p>
         </div>
-        <div id="knowledge" class="container knowledge grid">
+        <div id="knowledge" class="container knowledge grid" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-easing="ease-in-sine">
             <article class="text1">Current knowledge</article>
             <picture class="logo-html">
                 <img src="./public/img/imghtml.png" alt="HTML5">
@@ -68,15 +69,19 @@
         </div>
     </main>
     <footer class="flex-row container">
-        <a href="https://github.com/LucianoR23">
+        <a href="https://github.com/LucianoR23" target="_blank">
             <picture><img src="./public/img/imggit.png" alt="GitHub"></picture>
         </a>
-        <a href="https://www.linkedin.com/in/luciano-rodriguez-273809251/">
+        <a href="https://www.linkedin.com/in/luciano-rodriguez-273809251/" target="_blank">
             <picture><img src="./public/img/imglinkedin.png" alt="Linkedin"></picture>
         </a>
-        <a href="https://www.instagram.com/luciano2310/">
+        <a href="https://www.instagram.com/luciano2310/" target="_blank">
             <picture><img src="./public/img/imginsta.png" alt="Instagram"></picture>
         </a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

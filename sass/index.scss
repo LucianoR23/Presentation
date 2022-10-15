@@ -12,18 +12,38 @@
 @media screen and (max-width: 431px) {
     main {
         div {
-            min-height: 55em;
+            min-height: 50em;
         }
     }
     nav {
         justify-content: center;
     }
 
+    div.home {
+        h1 {
+            transform: translateY(0.5em);
+        }
+    }
+
     div.about {
         display: flex;
         flex-direction: column;
-        gap: 10em;
+        align-items: center;
+        gap: 8em;
         transform: translate(0px, 3em);
+
+        p {
+            padding: 1em;
+        }
+
+        img {
+            max-width: 28em;
+        }
+    }
+
+    p.about__text {
+        max-width: 32.25em;
+        font-size: $text-md;
     }
 
     div.knowledge {
@@ -35,13 +55,12 @@
         'text3 text3'
         'node react';
         min-width: 10em;
-        max-width: 32.5em;
-        gap: 4em;
-    }
+        max-width: 31em;
+        gap: 3em;
 
-    p.about__text {
-        max-width: 32.25em;
-        font-size: $text-md;
+        article {
+            font-size: $text-lg;
+        }
     }
 
     .container {
@@ -92,6 +111,12 @@
     
         img {
             width: 10em;
+        }
+    }
+
+    footer {
+        img {
+            width: 3em;
         }
     }
     

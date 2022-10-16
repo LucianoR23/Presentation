@@ -58,6 +58,8 @@ main {
     text-align: center; }
     main .home__title {
       font-size: 5em; }
+    main .home__img img {
+      max-width: 90em; }
   main .about {
     gap: 15em;
     text-align: start;
@@ -158,21 +160,59 @@ footer {
   justify-content: space-around;
   align-items: center; }
 
+@media screen and (max-width: 1025px) {
+  .menu {
+    flex-basis: 40%; }
+  main .home {
+    max-width: 70em; }
+    main .home img {
+      max-width: 60em; }
+  main .about {
+    gap: 3em;
+    align-items: center; }
+    main .about p {
+      padding: 1em;
+      font-size: 1.8em; }
+    main .about picture {
+      transform: translateY(-5.5em); }
+      main .about picture img {
+        max-width: 30em; }
+  main .knowledge {
+    min-width: 65em; }
+    main .knowledge .logo-html img {
+      width: 12em; }
+    main .knowledge .logo-css img {
+      width: 16em; }
+    main .knowledge .logo-boot img {
+      width: 15em; }
+    main .knowledge .logo-sass img {
+      width: 12em; }
+    main .knowledge .logo-js img {
+      width: 14em; }
+    main .knowledge .text2 {
+      transform: translate(-2em, 0); }
+    main .knowledge .logo-react {
+      transform: translate(0, 0); }
+    main .knowledge .logo-node {
+      transform: translate(0, 0); } }
+
 @media screen and (max-width: 431px) {
-  main div {
-    min-height: 50em; }
   nav {
     justify-content: center; }
+  .menu {
+    flex-basis: 100%; }
+  main div {
+    max-height: 50em; }
   div.home h1 {
     transform: translateY(0.5em); }
+  div.home img {
+    max-width: 32.5em; }
   div.about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8em;
+    gap: 3em;
     transform: translate(0px, 3em); }
-    div.about p {
-      padding: 1em; }
     div.about img {
       max-width: 28em; }
   p.about__text {
@@ -181,14 +221,11 @@ footer {
   div.knowledge {
     grid-template-areas: 'text1 text1' 'html css' 'boot sass' 'js text2' 'text3 text3' 'node react';
     min-width: 10em;
-    max-width: 31em;
     gap: 3em; }
     div.knowledge article {
       font-size: 2.2em; }
   .container {
     max-width: 32.25em; }
-  img {
-    max-width: 32.5em; }
   .logo-html img {
     width: 9em; }
   .logo-css img {

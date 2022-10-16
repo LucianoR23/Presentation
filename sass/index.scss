@@ -9,19 +9,105 @@
 @import './partials/header';
 @import './partials/footer';
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 1025px) {
+    .menu {
+        flex-basis: 40%;
+    }
+    
     main {
-        div {
-            min-height: 50em;
+
+        .home {
+            max-width: 70em;
+
+            img {
+                max-width: 60em;
+            }
+        }
+
+        .about {
+            gap: 3em;
+            align-items: center;
+
+            p {
+                padding: 1em;
+                font-size: $text-md;
+            }
+
+            picture {
+                transform: translateY(-5.5em);
+
+                img {
+                    max-width: 30em;
+                }
+            }
+        }
+
+        .knowledge {
+            min-width: 65em;
+
+            .logo-html {
+                img {
+                    width: 12em;
+                }
+            }
+            .logo-css {
+                img {
+                    width: 16em;
+                }
+            }
+            .logo-boot {
+                img {
+                    width: 15em;
+                }
+            }
+            .logo-sass {
+                img {
+                    width: 12em;
+                }
+            }
+            .logo-js {
+                img {
+                    width: 14em;
+                }
+            }
+            .text2 {
+                transform: translate(-2em, 0);
+            }
+
+            .logo-react {
+                transform: translate(0, 0);
+
+            }
+
+            .logo-node {
+                transform: translate(0, 0);
+            }
         }
     }
+}
+
+@media screen and (max-width: 431px) {
     nav {
         justify-content: center;
     }
 
+    .menu {
+        flex-basis: 100%;
+    }
+
+    main {
+        div {
+            max-height: 50em;
+        }
+    }
+
+
     div.home {
         h1 {
             transform: translateY(0.5em);
+        }
+        img {
+            max-width: 32.5em;
         }
     }
 
@@ -29,12 +115,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8em;
+        gap: 3em;
         transform: translate(0px, 3em);
-
-        p {
-            padding: 1em;
-        }
 
         img {
             max-width: 28em;
@@ -55,7 +137,6 @@
         'text3 text3'
         'node react';
         min-width: 10em;
-        max-width: 31em;
         gap: 3em;
 
         article {
@@ -65,10 +146,6 @@
 
     .container {
         max-width: 32.25em;
-    }
-
-    img {
-        max-width: 32.5em;
     }
 
     .logo-html {

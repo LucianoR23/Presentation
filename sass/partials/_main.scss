@@ -12,6 +12,12 @@ main {
         &__title {
             font-size: $text-title;
         }
+
+        &__img {
+            img {
+                max-width: 90em;
+            }
+        }
     }
 
     .about {
@@ -115,3 +121,4 @@ main {
         width: 16em;
     }
 }
+

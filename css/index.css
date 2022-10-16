@@ -160,7 +160,7 @@ footer {
   justify-content: space-around;
   align-items: center; }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1025px) and (min-width: 432px) {
   .menu {
     flex-basis: 40%; }
   main .home {
@@ -202,7 +202,7 @@ footer {
   .menu {
     flex-basis: 100%; }
   main div {
-    max-height: 50em; }
+    min-height: 50em; }
   div.home h1 {
     transform: translateY(0.5em); }
   div.home img {
@@ -211,7 +211,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3em;
+    gap: 8em;
     transform: translate(0px, 3em); }
     div.about img {
       max-width: 28em; }
@@ -224,27 +224,27 @@ footer {
     gap: 3em; }
     div.knowledge article {
       font-size: 2.2em; }
+    div.knowledge .logo-html img {
+      width: 9em; }
+    div.knowledge .logo-css img {
+      width: 12em; }
+    div.knowledge .logo-boot img {
+      width: 12em; }
+    div.knowledge .logo-sass img {
+      width: 9em; }
+    div.knowledge .logo-js img {
+      width: 10em; }
+    div.knowledge .text2 {
+      transform: translate(0, 0); }
+    div.knowledge .logo-node {
+      transform: translate(0, 0); }
+      div.knowledge .logo-node img {
+        width: 10em; }
+    div.knowledge .logo-react {
+      transform: translate(0, 0); }
+      div.knowledge .logo-react img {
+        width: 10em; }
   .container {
     max-width: 32.25em; }
-  .logo-html img {
-    width: 9em; }
-  .logo-css img {
-    width: 12em; }
-  .logo-boot img {
-    width: 12em; }
-  .logo-sass img {
-    width: 9em; }
-  .logo-js img {
-    width: 10em; }
-  .text2 {
-    transform: translate(0, 0); }
-  .logo-node {
-    transform: translate(0, 0); }
-    .logo-node img {
-      width: 10em; }
-  .logo-react {
-    transform: translate(0, 0); }
-    .logo-react img {
-      width: 10em; }
   footer img {
     width: 3em; } }
